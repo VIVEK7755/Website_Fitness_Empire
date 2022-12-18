@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Application</title>
+  <link rel="stylesheet" href="CSS\styles-appli.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>Application</h1>
+    <form id="form" action="sendEmail.php" onsubmit="return check_empty_field()" method="post">
+
+    <div class="main">
+      <input type="text" name="name" required placeholder="Name" id="name" class="INPUT" >
+      <input type="email" name="email" value="" required placeholder="Email" id="email" class="INPUT" >
+      <input type="text" name="occu" value="" placeholder="Occupation" id="occupation" class="INPUT" required >
+      <input type="tel" pattern="^\d{10}$" name="number" value=""  placeholder="Mobile" id="mobile" class="INPUT" required >
+
+    </div>
+
+      <div class="insurance">
+        <label for="insurance" id="insurancel" style="display:block">Do you have a private life insurance</label>
+          <input type="radio" name="insurance" class="insurancer" required value="Yes"><p style="display:inline">Yes</p>
+          <input type="radio" name="insurance" class="insurancer" value="No"><p style="display:inline" id="no">No</p>
+      </div>
+
+      <div class="genderdiv">
+        <label for="gender" style="display:block">Gender</label>
+           <input type="radio" name="gender" class="gender" required value="male"><p style="display:inline" >Male</p>
+           <input type="radio" name="gender" class="gender" value="female"> <p style="display:inline">Female</p>
+      </div>
+
+      <div class="find">
+        <label style="display:block" for="find">How did you find out about the gym?</label>
+        <input type="text" name="find" id="find" value="" class="INPUT">
+      </div>
+
+      <label style="display:block" for="Membership" id="member">Which Membership are you signing up for:
+        <select class="Membership" name="Membership">
+          <option value="select any" selected>Select any</option>
+          <option name="package" value="3999/month">3999/month</option>
+          <option name="package" value="5999/month">5999/month</option>
+        </select>
+      </label>
+      <label >Have you ever or do you have any of the following?</label>
+      <div class="check-box-1">
+        <div><input name="checkbox" type="checkbox"><label>Heart Disease</label><br></div>
+        <div><input name="checkbox" type="checkbox"><label>Cardiovascular Condition</label><br></div>
+        <div><input name="checkbox" type="checkbox"><label>Dizziness</label><br></div>
+        <div><input name="checkbox" type="checkbox"><label>Blackouts</label><br></div>
+        <div><input name="checkbox" type="checkbox"><label>Asthma</label><br></div>
+        <div><input name="checkbox" type="checkbox"><label>High/Low Blood Pressure</label><br></div>
+        <div><input name="checkbox" type="checkbox"><label>Arthritis</label><br></div>
+        <div><input name="checkbox" type="checkbox"><label>Diabetese</label><br></div>
+        <div><input name="checkbox" type="input" class="search-bar" placeholder="other"></div>
+      </div>
+
+      <div class="surgery">
+        <label for="surgery">Have you had surgery in the last 5 years, if yes, when & what?</label>
+        <input type="text" name="surgery" id="surgery" value="" class="INPUT">
+
+      </div>
+
+      <div class="anything">
+
+        <label for="else"> Anything else we need to know?</label>
+        <input type="text" name="else" value="" class="INPUT">
+      </div>
+      <div class="back-submit">
+        <a href="index.php" class="btn" style="text-decoration: none; ">Back</a>
+        <a href="/"><input type="submit"  name="submit1" value="Submit" id="submit" class="btn"></a>
+
+      </div>
+
+    </form>
+  </div>
+
+  </form>
+
+  <div id="orderplaced">
+       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ixzlxcbs.json"  background="transparent"  speed="1"  style="width: 9em; height: 9em;"  loop autoplay></lottie-player>
+       <h2 >Thank you</h2>
+       <h4 style="margin-top: 0.5em; ">We'll get back to you!</h4>
+       <a href="index.php" class="btn" style="text-decoration: none; ">Home</a>
+   </div>
+
+
+<!-- https://assets5.lottiefiles.com/packages/lf20_zweerbdg.json -->
+
+  <script type="text/javascript">
+    var form=document.getElementById('form');
+    var formdata= new FormData(form);
+    var orderplaceddiv=document.getElementById('orderplaced');
+    var submit=document.getElementById('submit');
+    form.addEventListener('submit',()=>{
+      orderplaceddiv.style.display="flex";
+    })
+  </script>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+        function sendEmail() {
+            var name = $("#name");
+            var email = $("#email");
+            var subject = $("#subject");
+            var body = $("#body");
+
+            if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(subject) && isNotEmpty(body)) {
+                $.ajax({
+                   url: 'sendEmail.php',
+                   method: 'POST',
+                   dataType: 'json',
+                   data: {
+                       name: name.val(),
+                       email: email.val(),
+                       subject: subject.val(),
+                       body: body.val()
+                   }, success: function (response) {
+                        $('#myForm')[0].reset();
+                        $('.sent-notification').text("Message Sent Successfully.");
+                   }
+                });
+            }
+        }
+
+        function isNotEmpty(caller) {
+            if (caller.val() == "") {
+                caller.css('border', '1px solid red');
+                return false;
+            } else
+                caller.css('border', '');
+
+            return true;
+        }
+    </script>
+
+</body>
+</html>
