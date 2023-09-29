@@ -17,50 +17,50 @@ Fitness Empire is a responsive gym website designed to promote fitness and provi
 
 The website is organized into several sections for a better user experience:
 
-1. **Header Section**
+1. **Header Section** <br>
    ![Header Image](header.png)
    - Displays the gym logo and navigation links.
    - Supports responsive navigation for mobile devices.
 
-2. **Home Section**
+2. **Home Section** <br>
    ![Home Image](home.png)
    - The main landing page with a background image and a call-to-action button.
    - Promotes fitness and encourages users to get started.
 
-3. **About Section**
+3. **About Section** <br>
    ![About Image](about.png)
    - Provides information about the gym, its mission, and values.
    - Emphasizes the importance of fitness and a healthy lifestyle.
 
-4. **Features Section**
+4. **Features Section** <br>
    ![Features Image](features.png)
    - Highlights gym features such as bodybuilding, workouts for men and women.
    - Describes the benefits of exercise and fitness.
 
-5. **Pricing Section**
+5. **Pricing Section** <br>
    ![Pricing Image](pricing.png)
    - Displays the pricing plans for gym memberships.
    - Includes details about what each plan offers.
 
-6. **Trainers Section**
+6. **Trainers Section** <br>
    ![Trainers Image](trainers.png)
    - Showcases expert trainers with images and social media links.
 
-7. **Banner Section**
+7. **Banner Section** <br>
    ![Banner Image](banner.png)
    - Promotes special offers and discounts for users to join the gym.
 
-8. **Review Section**
+8. **Review Section** <br>
    ![Review Image](review.png)
    - Displays testimonials from satisfied clients.
 
-9. **Footer Section**
+9. **Footer Section** <br>
    ![Footer Image](footer.png)
    - Includes quick links, opening hours, contact information, and social media links.
    - Allows users to subscribe to newsletters (optional feature).
 
 10. **Google Login and Registration**
-    ![Footer Image](footer.png)
+    ![Footer Image](footer.png) <br>
     - Users can log in using their Google accounts.
     - A registration form is available for new users.
     - Confirmation emails are sent to users after registration.
@@ -93,11 +93,11 @@ The website is organized into several sections for a better user experience:
 
 2. Set up a web server (e.g., XAMPP) and a MySQL database.
 
-3. Create a `config.php` file for database connection details.
+3. Create a `db_connection.php` file for database connection details.
 
 4. Import the database schema from the provided SQL file.
 
-5. Configure the Google API credentials for OAuth2 login.
+5. Configure the Google API credentials for OAuth2 login. Create a `gdb_connection.php` file for database connection details for google login.
 
 6. Customize the website content and styles as needed.
 
