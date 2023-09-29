@@ -18,42 +18,53 @@ Fitness Empire is a responsive gym website designed to promote fitness and provi
 The website is organized into several sections for a better user experience:
 
 1. **Header Section**
+   ![Header Image](header.png)
    - Displays the gym logo and navigation links.
    - Supports responsive navigation for mobile devices.
 
 2. **Home Section**
+   ![Home Image](home.png)
    - The main landing page with a background image and a call-to-action button.
    - Promotes fitness and encourages users to get started.
 
 3. **About Section**
+   ![About Image](about.png)
    - Provides information about the gym, its mission, and values.
    - Emphasizes the importance of fitness and a healthy lifestyle.
 
 4. **Features Section**
+   ![Features Image](features.png)
    - Highlights gym features such as bodybuilding, workouts for men and women.
    - Describes the benefits of exercise and fitness.
 
 5. **Pricing Section**
+   ![Pricing Image](pricing.png)
    - Displays the pricing plans for gym memberships.
    - Includes details about what each plan offers.
 
 6. **Trainers Section**
+   ![Trainers Image](trainers.png)
    - Showcases expert trainers with images and social media links.
 
 7. **Banner Section**
+   ![Banner Image](banner.png)
    - Promotes special offers and discounts for users to join the gym.
 
 8. **Review Section**
+   ![Review Image](review.png)
    - Displays testimonials from satisfied clients.
 
 9. **Footer Section**
+   ![Footer Image](footer.png)
    - Includes quick links, opening hours, contact information, and social media links.
    - Allows users to subscribe to newsletters (optional feature).
 
 10. **Google Login and Registration**
+    ![Footer Image](footer.png)
     - Users can log in using their Google accounts.
     - A registration form is available for new users.
     - Confirmation emails are sent to users after registration.
+
 
 ## Features
 
