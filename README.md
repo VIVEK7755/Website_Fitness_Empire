@@ -1,6 +1,6 @@
 # Fitness Empire Gym Website
 
-![Fitness Empire Logo](logo.png)
+![Fitness Empire Logo](1.png)
 
 Fitness Empire is a responsive gym website designed to promote fitness and provide information about the gym's services, trainers, and pricing. It also includes user authentication using Google login via the Google API and a registration form that sends confirmation emails to users after registration.
 
@@ -18,49 +18,41 @@ Fitness Empire is a responsive gym website designed to promote fitness and provi
 The website is organized into several sections for a better user experience:
 
 1. **Header Section** <br>
-   ![Header Image](header.png)
+   ![Header Image](8.png)
    - Displays the gym logo and navigation links.
    - Supports responsive navigation for mobile devices.
 
 2. **Home Section** <br>
-   ![Home Image](home.png)
+   ![Home Image](2.png)
    - The main landing page with a background image and a call-to-action button.
    - Promotes fitness and encourages users to get started.
 
 3. **About Section** <br>
-   ![About Image](about.png)
+   ![About Image](3.png)
    - Provides information about the gym, its mission, and values.
    - Emphasizes the importance of fitness and a healthy lifestyle.
 
 4. **Features Section** <br>
-   ![Features Image](features.png)
+   ![Features Image](4.png)
    - Highlights gym features such as bodybuilding, workouts for men and women.
    - Describes the benefits of exercise and fitness.
 
 5. **Pricing Section** <br>
-   ![Pricing Image](pricing.png)
+   ![Pricing Image](5.png)
    - Displays the pricing plans for gym memberships.
    - Includes details about what each plan offers.
 
 6. **Trainers Section** <br>
-   ![Trainers Image](trainers.png)
+   ![Trainers Image](6.png)
    - Showcases expert trainers with images and social media links.
 
-7. **Banner Section** <br>
-   ![Banner Image](banner.png)
-   - Promotes special offers and discounts for users to join the gym.
-
-8. **Review Section** <br>
-   ![Review Image](review.png)
-   - Displays testimonials from satisfied clients.
-
-9. **Footer Section** <br>
-   ![Footer Image](footer.png)
+7. **Footer Section** <br>
+   ![Footer Image](7.png)
    - Includes quick links, opening hours, contact information, and social media links.
    - Allows users to subscribe to newsletters (optional feature).
 
-10. **Google Login and Registration**
-    ![Footer Image](footer.png) <br>
+8. **Google Login and Registration** <br>
+    ![Footer Image](9.png) 
     - Users can log in using their Google accounts.
     - A registration form is available for new users.
     - Confirmation emails are sent to users after registration.
